@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프론트엔드 김도연-포트폴리오</title>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header id="myHeader" class="shrink">
+      <ul id="main_menu">
+        <li><a href="#sec1" id="li1">ME MANUAL</a></li>
+        <li><a href="#sec2" id="li2">USE</a></li>
+        <li><a href="#sec3" id="li3">FROM NOW</a></li>
+      </ul>
+    </header>
+
+
+    <section id="sec1">
+      <div class="title1">
+        <h2 id="hi">안녕하세요!</h2>
+        <div class="words">
+          <span>유쾌한</span>
+          <span>집요한</span>
+          <span>신박한</span>
+          <span>유쾌한</span>
+        </div>
+        <h2 id="hi2">프론트엔드 개발자 김도연입니다.</h2>
+        <a href="./Developer_김도연.docx" download><button class="resume">RESUME</button></a>
+
+        <p>틀에 벗어나 새로운 시각으로 세상을 바라보는 저는 머릿속에 있는 무한한 상상을 실현하려 노력합니다. <br>
+          고객이 원하는 서비스를 탐구하는 것에 집요하고, 신뢰하는 동료들과 즐겁게 개발하는 것이 제 삶의 원동력입니다.</p>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./img/1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./img/2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./img/3.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./img/4.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./img/5.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./img/6.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./img/7.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./img/8.png" style="width:100%">
+        </div>
+
+      </div>
+      <div id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+    </section>
+
+    <section id="sec2">
+      <h3>ME MANUAL / 자기소개</h3>
+
+      <div class="likes">
+        <div class="like" data-bg-image="./img/joyful.jpg">JOYFUL</div>
+        <div class="like" data-bg-image="./img/games.jpg">GAMES</div>
+        <div class="like" data-bg-image="./img/coop.jpg">CO-OP</div>
+        <div class="like" data-bg-image="./img/events.jpg">EVENTS</div>
+        <div class="like" data-bg-image="./img/design.jpg">DESIGN</div>
+      </div>
+
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JAVASCRIPTS</div>
+        <div class="skill">REACT</div>
+        <div class="skill">TYPESCRIPTS</div>
+        <div class="skill">NODE.JS</div>
+      </div>
+
+      <div class="skills2">
+        <div class="skill2">- 웹에 대한 표준과 접근성을 이해하고, 보여주려 노력합니다.</div>
+        <div class="skill2">- 동적인 표현과 사용자가 이용하기 편한 레이아웃을 고려합니다.</div>
+        <div class="skill2">- 사용자를 고려한 인터렉션을 제 방식대로 자유롭게 표현합니다.</div>
+        <div class="skill2">- 컴포넌트 단위의 마크업을 능숙하게 하려 노력합니다.</div>
+        <div class="skill2">- 정적 타입으로 개발해 안정성과 가독성을 높이려 노력합니다.</div>
+        <div class="skill2">- 웹 서버 프레임워크부터 DB연결, 다양한 서버와 통신이 가능합니다.</div>
+      </div>
+    </section>
+
+    <section id="sec3">
+      <h3>USE / 프로젝트</h3>
+      <div class="category">
+        <div class="projects">Team Projects</div>
+        <div class="projects">Personal Projects</div>
+      </div>
+
+      <!-- main1 -->
+      <main id="main1">
+        <div>
+          <span>Team Projects</span>
+          <h1>팀 프로젝트</h1>
+          <hr>
+          <p>수많은 아이디어와 창의력을 도출해 여러 분야로 뻗어 나갑니다. <br>
+            협동심과 배려심을 가지고 긍정적이고 즐겁게 임합니다. <br><br>
+            - JavaScripts / JQuery / React / TypeScripts
+          </p>
+          <a href="#">Code Review</a>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+              <div class="st1">
+                <h2>이제서야</h2>
+                <p>' 언제나, 어디서나, 이제서야 '<br>이벤트(오프라인 행사)의 안전 정보 제공을 통해 <br> 안전 사고 사전 예방을 위한 알림 서비스</p>
+                <a href="https://dododoodo.github.io/leejeseoya7/" target="_blank">explore</a>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+              <div class="st2">
+                <h2>니밈내밈</h2>
+                <p>
+                  ' 밈으로 어디까지 놀아봤어? '<br> 검색공간과 놀이공간으로 밈에 대한 정보를 알 수 있고, <br> 밈을 즐기고 다양한 체험 기회를 마련하는 서비스
+                </p>
+                <a href="https://dododoodo.github.io/nmnm/" target="_blank">explore</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--three">
+
+              <div class="st3">
+                <h2>제작중</h2>
+                <p>
+                </p>
+                <a href="#" target="_blank">explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </main>
+
+      <!-- main2 -->
+      <main id="main2">
+        <div>
+          <span>Personal Projects</span>
+          <h1>개인 프로젝트</h1>
+          <hr>
+          <p>언어에 대해 깊이있게 이해하고 <br>
+            색다르고 다양한 경험을 통해 나만의 색이 담긴 웹사이트를 만듭니다. <br><br>
+            - JavaScripts / React / TypeScripts / Node.js
+          </p>
+          <a href="#">Code Review</a>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one2">
+              <div class="st3">
+                <h2>도봉이네 젤리가게</h2>
+                <p>' Welcome To Dobong’s Jellyshop '<br>어딘가 오싹해지는 특별한 젤리들을 팔고, <br> 배송까지 알아볼 수 있는 픽셀 컨셉 서비스</p>
+                <a href="https://dododoodo.github.io/jelly1/" target="_blank">explore</a>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two2">
+              <div class="st4">
+                <h2>ADFA!</h2>
+                <p>
+                  ' Adult Farm Experience Service '<br> 정신적으로 지치고 아픈 현대사회의 어른들에게 <br>
+                  야채 등을 수확하며 힐링하는 가상 농장 체험 서비스
+                </p>
+                <a href="https://dododoodo.github.io/adfa_service3/" target="_blank">explore</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide--three">
+
+              <div class="st3">
+                <h2>제작중</h2>
+                <p>
+                </p>
+                <a href="#" target="_blank">explore</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+      </main>
+    </section>
+
+    <section id="sec4">
+      <h3>FROM NOW / 연락</h3>
+      <img src="./img/" alt="">
+      <div class="contacts">
+        <div class="contact">
+          <img src="./img/face.jpg" alt="">
+          <h2>김도연 | Doyeon Kim</h2>
+          <ul>
+            <li>Birth : 2003.01.25</li>
+            <li>Phone : 010.9505.5563</li>
+            <li>E-mail : nsa10050@gmail.com</li>
+          </ul>
+        </div>
+        <div class="aspire">
+          <h3>다시는 오지 않는 한번 뿐인 기회를 놓치지 않기 위해 <br>
+            꾸준히 성장하며 기다리겠습니다.</h3>
+        </div>
+        <div class="sns">
+          <a href="">Github</a>
+          <a href="">Velog</a>
+          <a href="">Gmail</a>
+          <a href="">Behance</a><br>
+          <a href="">Instagram</a>
+          <a href="">Notion</a>
+          <a href="">Discord</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  </div>
+  <script src="./js/index.js"></script>
+  <script>
+    // Get the header
+    var header = document.getElementById("myHeader");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.remove("shrink");
+      } else {
+        header.classList.add("shrink");
+      }
+    }
+
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function () { myFunction() };
+
+
+  </script>
+</body>
+
+</html>

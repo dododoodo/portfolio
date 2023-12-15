@@ -1,0 +1,49 @@
+header {
+    position: sticky;
+    top: 0;
+    transition: 0.3s;
+    left: 0;
+    right: 0;
+    background: #F0F0F0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #213555;
+    z-index: 5;
+}
+
+.shrink {
+    padding-top: 2%;
+}
+
+
+#main_menu {
+    text-align: center;
+}
+
+
+#main_menu li {
+    font-family: 'Noto Sans KR';
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2vw;
+    margin-left: 2vw; 
+    font-size: 1.1vw;
+    font-weight: 500;
+    
+}
+
+/* #main_menu li:hover {
+    
+    cursor: url('/img/c2.png') 2 2, pointer;
+} */
+
+a {
+    font-family: 'Pretendard';
+    font-weight: bold;
+    color: #213555;
+    text-decoration: none;
+}
