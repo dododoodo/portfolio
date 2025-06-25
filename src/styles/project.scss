@@ -1,0 +1,52 @@
+// import
+@import './variables';
+@import './mixins';
+
+// 01. project_logo
+.project_logo {
+    margin-top: clamp(100px, 18vh, 200px);
+    text-align: center;
+
+    img {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+    }
+
+    // 02. motto
+    .motto_container {
+        margin-top: clamp(100px, 21.3vh, 300px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .motto_text {
+            padding: 0 55px;
+            h2 {
+                @include dos_font_style_1;
+                white-space: pre-line;
+            }
+
+            p {
+                margin-top: 10px;
+                @include wanted_font_style_2;
+            }
+        }
+
+        .brakets_1 {
+            max-width: 18px;
+            width: 100%;
+        }
+        
+        .brakets_2 {
+            max-width: 18px;
+            width: 100%;
+        }
+    }
+}
+
+// 03. project_section 
+
+.project_section {
+    margin-top: 260px;
+}

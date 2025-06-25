@@ -1,0 +1,133 @@
+// import
+@import './variables';
+
+// font
+
+@font-face {
+    font-family: "dos";
+    font-weight: normal;
+    src: url("../assets/DOSSaemmul.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "wantedMedium";
+    font-weight: normal;
+    src: url("../assets/WantedSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "wantedRegular";
+    font-weight: normal;
+    src: url("../assets/WantedSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "wantedSemiBold";
+    font-weight: normal;
+    src: url("../assets/WantedSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "wantedBold";
+    font-weight: normal;
+    src: url("../assets/WantedSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "wantedExtraBold";
+    font-weight: normal;
+    src: url("../assets/WantedSans-ExtraBold.ttf") format("truetype");
+}
+
+// -----------
+// ---mixin---
+// -----------
+
+// font_style
+
+@mixin dos_font_style_1 {
+    font-family: $dos;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+@mixin wanted_font_style_0 {
+    font-family: $wantedExtraBold;
+    font-size: 50px;
+}
+
+@mixin wanted_font_style_1 {
+    font-family: $wantedExtraBold;
+    font-size: 20px;
+}
+
+@mixin wanted_font_style_2 {
+    font-family: $wantedBold;
+    font-size: 17px;
+}
+
+@mixin wanted_font_style_3 {
+    font-family: $wantedBold;
+    font-size: 27px;
+}
+
+@mixin wanted_font_style_4 {
+    font-family: $wantedSemiBold;
+    font-size: 25px;
+}
+
+@mixin wanted_font_style_5 {
+    font-family: $wantedSemiBold;
+    font-size: 17px;
+}
+
+@mixin wanted_font_style_6 {
+    font-family: $wantedRegular;
+    font-size: 17px;
+}
+
+@mixin wanted_font_style_7 {
+    font-family: $wantedRegular;
+    font-size: 15px;
+}
+
+@mixin wanted_font_style_8 {
+    font-family: $wantedExtraBold;
+    font-size: 45px;
+}
+
+@mixin wanted_font_style_9 {
+    font-family: $wantedSemiBold;
+    font-size: 20px;
+}
+
+@mixin wanted_font_style_10 {
+    font-family: $wantedRegular;
+    font-size: 27px;
+}
+
+@mixin wanted_font_style_11 {
+    font-family: $wantedSemiBold;
+    font-size: 23px;
+}
+
+@mixin wanted_font_style_12 {
+    font-family: $wantedBold;
+    font-size: 25px;
+}
+
+@mixin wanted_font_style_13 {
+    font-family: $wantedSemiBold;
+    font-size: 15px;
+}
+
+
+@mixin wanted_font_style_15 {
+    font-family: $wantedBold;
+    font-size: 15px;
+}
+
+@mixin wanted_font_style_16 {
+    font-family: $wantedRegular;
+    font-size: 13px;
+}

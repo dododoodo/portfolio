@@ -1,0 +1,109 @@
+// import
+@import './variables';
+@import './mixins';
+
+// reset
+*{box-sizing: border-box; padding:0; margin: 0; word-break: keep-all;} 
+body::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera */}
+h1,h2,h3,h4,h5,p,figure{margin: 0; padding: 0;}
+ol,ul,li{list-style: none; margin: 0; padding:0;}
+button{
+    border: 0; margin: 0; padding: 0; background-color: transparent; 
+    color: $blackColor;
+}
+img{border: 0; vertical-align: middle; object-fit: cover;}
+a{text-decoration: none; color: $blackColor;}
+input, textarea{
+    border:0;
+    color: $blackColor;
+}
+::before,::after{margin:0; padding: 0; box-sizing: border-box;}
+
+
+body {
+    background-color: $blackColor;
+    color: $whiteColor;
+    font-family: 'wantedMedium';
+    font-size: 20px;
+}
+
+body.dark {
+    background-color: $blackColor;
+    color: $whiteColor;
+}
+
+body.light {
+    background-color: $whiteColor;
+    color: $blackColor;
+}
+
+.all_container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 55px;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+
+// toggle_switch button
+.toggle_wrapper {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    transform: translateY(100px) translateX(-50%);
+    transition: transform 0.4s ease;
+    z-index: 999;
+
+    &.show {
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+.toggle_switch {
+    width: 60px;
+    height: 30px;
+    background-color: $whiteColor;
+    border-radius: 999px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    .circle {
+        width: 23px;
+        height: 23px;
+        background-color: $blackColor;
+        border-radius: 50%;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transition: left 0.3s;
+    }
+
+    &.on {
+        background-color: $blackColor;
+
+        .circle {
+            background-color: $whiteColor;
+            left: 32px;
+        }
+    }
+    &.left {
+        background-color: white;
+        .circle {
+            left: 3px;
+            background-color: black;
+        }
+    }
+
+    &.right {
+        background-color: black;
+        .circle {
+            left: 33px;
+            background-color: white;
+        }
+    }
+}

@@ -1,0 +1,196 @@
+// import
+@import './variables';
+@import './mixins';
+
+// 01. main_logo
+.main_logo {
+    margin-top: clamp(100px, 18vh, 200px);
+    text-align: center;
+
+    img {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+    }
+
+    // 02. motto
+    .motto_container {
+        margin-top: clamp(100px, 15vh, 300px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .motto_text {
+            padding: 0 55px;
+            h2 {
+                @include dos_font_style_1;
+                white-space: pre-line;
+            }
+
+            p {
+                margin-top: 10px;
+                @include wanted_font_style_4;
+            }
+        }
+
+        .brackets_1,
+        .brackets_2 {
+            max-width: 18px;
+            width: 100%;
+        }
+    }
+}
+
+// 03. about_container
+.about_container {
+    margin-top: 220px;
+
+    .about_me {
+        margin-top: 50px;
+        display: flex;
+        
+        .about_me_text {
+            margin-left: 42px;
+            >h2 {
+                @include wanted_font_style_3;
+                margin-bottom: 8px;
+            }
+
+            .about_name{
+                display: flex;
+                align-items: end;
+
+                h1 {
+                    @include wanted_font_style_0;
+                    padding: 0px 5px;
+                    background-color: $whiteColor;
+                    color: $blackColor;
+                    border-radius: 5px;
+                    margin-right: 5px
+                }
+
+                h2 {
+                    @include wanted_font_style_0;
+                }
+
+                p {
+                    @include wanted_font_style_3;
+                    display: flex;
+                    margin: 0 0 5px 5px;
+
+                    .yellow_dot_1 {
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            .about_profile {
+                margin: 40px 0;
+                display: flex;
+                align-items: center;
+
+                .brackets_3,
+                .brackets_4 {
+                    max-width: 14px;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block; 
+                    }
+                }
+
+                .profile_text {
+                    padding: 0 21px;
+                    >h2 {
+                        @include wanted_font_style_4;
+                        margin-bottom: 9px;
+                        display: flex;
+
+                    }
+                    >p {
+                        @include wanted_font_style_6;
+                        line-height: 135%;
+                    }
+                    
+                }
+            }
+
+            .about_btns {
+                display: flex;
+                .github {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+// 05. contact_section
+.contact_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 150px;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .contact_text {
+        >h2 {
+            margin-top: 50px;
+            @include wanted_font_style_10;
+            white-space: pre-line;
+            line-height: 130%;
+            span {
+                color: $yellowColor;
+            }
+        }
+    }
+
+    .contact_info {
+        margin-top: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+
+        .info {
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 10px;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 12px;
+                @include wanted_font_style_4;
+            }
+        }
+
+        .links {
+            display: flex;
+            gap: 16px;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                color: $whiteColor;
+                text-decoration: none;
+                @include wanted_font_style_4;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                img {
+                    margin-right: 5px;
+                }
+
+            }
+        }
+    }
+}

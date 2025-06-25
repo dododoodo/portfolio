@@ -1,0 +1,181 @@
+// import
+@import './variables';
+@import './mixins';
+
+// 01. all_container
+.detail_container {
+    max-width: 670px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+// 02. prevBtn
+
+.prevBtn {
+    cursor: pointer;
+    margin-top: 80px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+// 03. detail_section
+.detail_section{
+    .detail_hr {
+        margin: 40px 0;
+        background-color: $grayColor; 
+    }
+
+    .article_thumb {
+        margin-top: 50px;
+        padding-bottom: 30px;
+        position: relative;
+
+        >img {
+            border-radius: 15px;
+        }
+
+        >p {
+            @include wanted_font_style_7;
+            color: $grayColor;
+        }
+
+        .title_container {
+            margin: 10px 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            >h1 {
+                @include wanted_font_style_12;
+            }
+
+            >p {
+                @include wanted_font_style_13;
+                color: $grayColor;
+            }
+        }
+
+
+        .deploy_btn {
+            @include wanted_font_style_15;
+            position: absolute;
+            bottom: 50px;
+            right: 20px;
+            background-color: $blackColor;
+            color: $whiteColor;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            
+            &:hover {
+                transform: translateY(-3px);
+                background-color: #333;
+            }
+        }
+    }
+
+    .article_info {
+        margin-bottom: 55px;
+        p {
+            @include wanted_font_style_6;
+            line-height: 140%;
+            white-space: pre-line;
+        }
+
+        &.row1 {
+            display: flex;
+            gap: 80px;
+        }
+
+        ul {
+            padding-left: 20px;
+            li{
+                @include wanted_font_style_6;
+                line-height: 140%;
+                list-style-type: disc;
+            }
+        }
+
+        .stack_list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 340px;
+            gap: 8px;
+
+            .stack_box {
+                @include wanted_font_style_13;
+                border: 1px solid $blackColor;
+                background-color: $whiteColor;
+                color: $blackColor;
+                padding: 3px 14px;
+                border-radius: 5px;
+
+                &:nth-child(1){
+                    background-color: $yellowColor;
+                }
+            }
+        }
+
+        &.row2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .link_list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 200px;
+            gap: 8px;
+
+            .link_box {
+                @include wanted_font_style_13;
+                background-color: $blackColor;
+                color: $whiteColor;
+                padding: 3px 14px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
+                img {
+                    margin-right: 7px;
+                }
+                
+            }
+        }
+
+        .feature_list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+
+        .feature_item {
+            border-bottom: 1px solid #ccc;
+
+            h4 {
+                @include wanted_font_style_5;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                margin: 30px 0;
+                @include wanted_font_style_7;
+                text-align: right;
+                white-space: pre-line;
+            }
+        }
+    }
+}
+
