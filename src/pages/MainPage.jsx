@@ -12,6 +12,7 @@ import AboutBtn from "../components/AboutBtn";
 import CareerContainer from "../components/CareerContainer";
 import SkillsSection from "../components/SkillsSection";
 import BounceObject from "../components/BounceObject";
+import TopBtn from "../components/TopBtn";
 
 function MainPage() {
     // 다크모드/라이트모드
@@ -150,6 +151,7 @@ function MainPage() {
                 
                 <BounceObject />
                 </section>
+                <TopBtn/>
         </main>
         </>
     );

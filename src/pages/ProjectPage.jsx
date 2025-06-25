@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import TitleText2 from "../components/TitleText2";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TopBtn from "../components/TopBtn";
 
 function ProjectPage() {
 
@@ -40,7 +41,7 @@ function ProjectPage() {
             <TitleText2 text="Project" />
             <ProjectList />
         </section>
-        
+        <TopBtn/>
         <Footer />
         </>
     )

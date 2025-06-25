@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function TopBtn() {
     const [showTopBtn, setShowTopBtn] = useState(false);
