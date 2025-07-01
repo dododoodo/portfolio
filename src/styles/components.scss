@@ -12,6 +12,7 @@
 }
 
 .black_dot_3  {
+    margin-left: 5px;
 }
 
 // 01. Title_Text
@@ -261,7 +262,7 @@
     }
 
     .title {
-        @include wanted_font_style_12;
+        @include wanted_font_style_4;
         margin-top: 10px;
     }
 
@@ -346,7 +347,7 @@ footer.footer_wrap {
     left: 70.6%;
     transform: translate(-50%, 120px);
     padding: 6px;
-    bottom: 20px;
+    bottom: 35px;
     background-color: $blackColor;
     color: $whiteColor;
     border: none;

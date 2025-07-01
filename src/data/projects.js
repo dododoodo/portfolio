@@ -195,6 +195,49 @@ const projects = [
             }
         ],
         thumbnail: '/img/project_gongyeon_thumb.png',
+    },{
+        id: 'monsly',
+        title: 'Monsly-일정 관리 어플리케이션 ',
+        mode: "개인 프로젝트",
+        type: 'Flutter Application',
+        summary: `Flutter 기반의 스마트 일정 관리 웹 어플리케이션입니다.`,
+        duration: '2025-06-02 ~ 2025-06-06 (총 4일)',
+        members: 1,
+        role: [
+        '프로젝트 기획 및 디자인',
+        '프론트엔드 기능 구현',
+        ],
+        techStack: ['Flutter', 'Dart', 'GetX','Hive','Figma'],
+        links: {
+        github: 'https://github.com/dododoodo/monsly',
+        figma: 'https://www.figma.com/design/54aUkdiCdCmNdZMi2IAnZc/Monsly_%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0-1&t=6qYTm4yAaT0kri1u-1',
+        deploy: 'https://monsly.vercel.app/'
+        },
+        description: `TableCalendar 패키지를 중심으로 구현한 Flutter 기반의 일정 관리 애플리케이션입니다.
+        캘린더 UI를 활용해 사용자가 일정을 손쉽게 등록, 수정, 삭제할 수 있으며,
+        개인 스케줄을 효율적으로 관리할 수 있도록 작지만 직관적인 인터페이스로 구성했습니다.
+        그린컴퓨터아카데미에서 진행한 개인 미니 프로젝트입니다.`,
+        features: [
+            {
+                title: '1. TableCalendar 기반 캘린더 UI',
+                description: `Flutter의 TableCalendar 위젯을 사용하여 월 단위의 일정을 보여줍니다.
+                특정 날짜를 클릭하면 해당 날짜의 일정만 리스트로 표시되며,
+                각 날짜의 일정 유무는 컬러 마커로 캘린더에 표시를 남깁니다.`
+            },
+            {
+                title: '2. 일정 삭제 및 수정 기능',
+                description: `일정 항목 우측의 버튼을 통해 일정 수정 및 삭제가 가능하며,
+            수정 시 기존 정보를 자동으로 불러오고, bottomSheet를 통해 수정 폼을 띄웁니다.
+            삭제 시 해당 DateTime을 기준으로 Hive에서 해당 일정만 제거됩니다.`
+            },
+            {
+                title: '3. Hive를 이용한 로컬 데이터 저장',
+                description: `Hive 저장소로 scheduleBox를 생성해 날짜별로 일정을 저장, 조회합니다.
+            일정 추가/수정/삭제 시마다 Hive 데이터가 자동으로 갱신되며,
+            전체 일정은 allScheduleList로 가져와 사용합니다.`
+            }
+        ],
+        thumbnail: '/img/project_monsly_thumb.png',
     },
 
 ];
