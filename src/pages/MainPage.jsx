@@ -148,10 +148,15 @@ function MainPage() {
                         </a>
                     </div>
                 </div>
+
+                <div className="toggle_text">
+                    <h3>프로젝트를 확인하려면
+                        하단의 토글 버튼을 클릭하세요.</h3>
+                </div>
                 
                 <BounceObject />
-                </section>
-                <TopBtn/>
+            </section>
+            <TopBtn/>
         </main>
         </>
     );

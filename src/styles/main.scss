@@ -194,4 +194,25 @@
             }
         }
     }
+
+    .toggle_text {
+        margin: 0 auto;
+        padding: 70px 0 30px;
+        h3 {
+            @include wanted_font_style_6;
+            font-weight: lighter;
+            color: $grayColor;
+            white-space: pre-line;
+            animation: text_opacity 3s ease-in-out infinite;
+        }
+    }
+
+    @keyframes text_opacity {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
 }
