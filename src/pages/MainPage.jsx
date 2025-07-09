@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../styles/main.scss";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -51,7 +52,7 @@ function MainPage() {
             <section className="about_container">
             <TitleText text="About" />
             {/* 자기소개 */}
-            <div className="about_me">
+            <div className="about_me responsive">
                 <img src="/img/main_picture_1.png" alt="증명사진" />
                 <div className="about_me_text">
                     <h2>주니어 프론트엔드 개발자</h2>

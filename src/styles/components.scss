@@ -68,6 +68,10 @@
             display: flex;
             @include wanted_font_style_4;
             margin-bottom: 10px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 30px;
+            }
         }
 
         .career_list li {
@@ -232,6 +236,15 @@
         &.active {
             color: $blackColor;
         }
+
+        @media (max-width: 768px) {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 412px) {
+            margin-bottom: 10px;
+        }
+        
     }
 }
 
@@ -344,7 +357,7 @@ footer.footer_wrap {
 // 08. TopBtn
 .top_btn {
     position: fixed;
-    left: 70.6%;
+    left: 78%;
     transform: translate(-50%, 120px);
     padding: 6px;
     bottom: 35px;
@@ -369,5 +382,9 @@ footer.footer_wrap {
     img {
         width: 20px;
         height: 20px;
+    }
+
+    @media (max-width: 768px) {
+        left: 85%;
     }
 }

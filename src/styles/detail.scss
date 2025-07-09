@@ -94,6 +94,11 @@
         &.row1 {
             display: flex;
             gap: 80px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 55px;
+            }
         }
 
         ul {
@@ -110,6 +115,13 @@
             flex-wrap: wrap;
             width: 340px;
             gap: 8px;
+
+
+            @media (max-width: 600px) {
+                justify-content: flex-start;
+                max-width: 100%;
+                margin: 0;
+            }
 
             .stack_box {
                 @include wanted_font_style_13;
@@ -128,6 +140,11 @@
         &.row2 {
             display: flex;
             gap: 20px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 55px;
+            }
         }
 
         .link_list {
