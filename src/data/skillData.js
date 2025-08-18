@@ -20,7 +20,7 @@ export const skillData = {
             },
             {
             name: "TypeScript",
-            icon: "/img/main_skill_6.svg",
+            icon: "/img/main_skill_26.svg",
             description: "정적 타입 기반 언어 / 코드 안정성 향상",
             },
             {
@@ -40,7 +40,7 @@ export const skillData = {
         items: [
             {
             name: "React",
-            icon: "/img/main_skill_26.svg",
+            icon: "/img/main_skill_6.svg",
             description: "React 컴포넌트를 활용한 SPA 기반 웹 UI 구축 경험",
             },
             {
