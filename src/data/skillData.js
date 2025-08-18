@@ -19,6 +19,11 @@ export const skillData = {
             description: "DOM 조작 및 이벤트 처리 / 비동기 통신 / 동적 UI 구현",
             },
             {
+            name: "TypeScript",
+            icon: "/img/main_skill_6.svg",
+            description: "정적 타입 기반 언어 / 코드 안정성 향상",
+            },
+            {
             name: "Dart",
             icon: "/img/main_skill_4.svg",
             description: "Flutter 기반 UI 구현 / 상태 관리 / 비동기 처리",
@@ -35,7 +40,7 @@ export const skillData = {
         items: [
             {
             name: "React",
-            icon: "/img/main_skill_6.svg",
+            icon: "/img/main_skill_26.svg",
             description: "React 컴포넌트를 활용한 SPA 기반 웹 UI 구축 경험",
             },
             {
@@ -89,6 +94,12 @@ export const skillData = {
             },
         ] },
         { title: "작업 및 협업 도구", items: [
+            {
+            name: "Cursor AI",
+            icon: "/img/main_skill_27.svg",
+            description:
+                "코드 자동완성 및 리팩토링 경험 / 협업 효율 향상 및 생산성 극대화",
+            },
             {
             name: "Figma",
             icon: "/img/main_skill_15.svg",
