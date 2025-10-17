@@ -81,7 +81,7 @@ function MainPage() {
                     {/* 버튼 */}
                     <div className="about_btns">
                         <AboutBtn
-                        text="이력서 다운받기"
+                        text="이력서 받기"
                         icon="/img/main_resume_1.svg"
                         href="/files/resume.pdf"
                         download={true}
