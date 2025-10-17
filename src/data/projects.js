@@ -154,6 +154,58 @@ const projects = [
         thumbnail: '/img/project_pulmuone_thumb.png',
     },
     {
+        id: 'nmnm',
+        title: '니밈내밈 - 밈 놀이공간 플랫폼 기획 웹사이트',
+        mode: "팀 프로젝트",
+        type: 'Service Planning & Landing Page',
+        summary: `10대 청소년을 위한 밈(Meme) 놀이 및 정보 제공 서비스를 기획하고 소개하는 랜딩 페이지입니다.`,
+        duration: '2023-09-27 ~ 2023-11-26 (80일)',
+        members: 6,
+        role: [
+        '프로젝트 네이밍 및 브랜딩 컨셉 주도',
+        '랜딩 페이지 퍼블리싱 및 프론트엔드 구축',
+        '반응형 웹 디자인 적용 및 UI 애니메이션 구현',
+        '팀 소개 및 포트폴리오 페이지 연동'
+        ],
+        techStack: ['Javascript', 'HTML', 'CSS', 'Figma'],
+        links: {
+        github: 'https://github.com/dododoodo/nmnm',
+        figma: 'https://www.figma.com/design/FcsRQAFr36GPGEgvPheS5Z/%EB%8B%88%EB%B0%88%EB%82%B4%EB%B0%88-%EC%9B%B9-%EC%9E%91%EC%97%85?node-id=0-1&t=QVG32gEQJEIOCMXu-1',
+        deploy: 'https://dododoodo.github.io/nmnm/'
+        },
+        description: `10대 청소년의 밈 활용 문제를 해결하고자 기획된 서비스로, '밈을 이용한 청소년 놀이공간 서비스'를 목표합니다.
+                사용자 리서치를 통해 궁금한 밈을 검색하거나 나만의 밈 제작 욕구 등 핵심 문제를 정의했습니다.
+                해결책으로 '밈 검색 공간'과 '밈으로 노는 놀이 공간'으로 구분하여, 밈 정보 제공부터 데일리 미션, 숏폼 콘테스트 등 10대들에게 참여형 활동을 제공합니다.
+                본 웹사이트는 프로젝트의 핵심 기획 의도와 UI/UX 프로토타입, 디자인 컨셉을 상세히 보여주기 위해 제작된 반응형 포트폴리오 랜딩 페이지입니다.`,
+        features: [
+            {
+                title: '1. 반응형 웹(Responsive Web) 및 레이아웃 구현',
+                description: `다양한 디바이스 환경에서 최적화된 콘텐츠를 제공할 수 있도록 반응형 웹으로 설계 및 구현했습니다.
+                메인 페이지 전체 레이아웃을 HTML/CSS로 구성하고, 기획 의도가 명확히 전달되도록 섹션별 콘텐츠를 배치했습니다.`
+            },
+            {
+                title: '2. 사용자 인터랙션을 위한 동적 효과 구현',
+                description: `AOS(Animate On Scroll), ScrollReveal, jQuery 등의 라이브러리를 활용하여,
+                사용자 스크롤 위치에 따라 콘텐츠가 나타나거나 움직이는 다이나믹한 UI/UX 효과를 적용했습니다.`
+            },
+            {
+                title: '3. 메인 콘텐츠 비디오 및 슬라이드 연동',
+                description: `서비스의 튜토리얼 및 핵심 기능을 보여주는 비디오 콘텐츠를 페이지에 직접 삽입했습니다.
+                또한 Slick Carousel 등의 라이브러리를 사용하여 시각적 정보를 효과적으로 전달하도록 했습니다.`
+            },
+            {
+                title: '4. 모달 팝업을 활용한 상세 정보 제공',
+                description: `니밈내밈의 캐릭터 '쥬쥬 6총사' 클릭 시, JavaScript를 이용해 모달 팝업 창을 띄워 상세 이미지를 보여줍니다.
+                캐릭터를 확대해서 볼 수 있고, X 버튼을 클릭해 다시 돌아갈 수 있습니다.`
+            },
+            {
+                title: '5. 브랜딩을 위한 특수 효과 적용',
+                description: `서비스의 발랄한 분위기를 살리기 위해 jQuery를 활용한 애니메이션 타이틀(animated-title) 및 배경 요소(Sticker, Particle) 등을 적용했습니다.`
+            }
+        ],
+        thumbnail: '/img/project_nmnm_thumb.png',
+    },
+    {
         id: 'gongyeon',
         title: '공연본당 - 공연 정보 제공 서비스',
         mode: "개인 프로젝트",
